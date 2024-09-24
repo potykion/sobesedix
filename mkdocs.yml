@@ -12,7 +12,7 @@ plugins:
       lang:
         - en
         - ru
-
+repo_url: https://github.com/potykion/sobesedix
 markdown_extensions:
   - pymdownx.magiclink
   - pymdownx.highlight:

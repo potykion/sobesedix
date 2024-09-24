@@ -1,4 +1,24 @@
-site_name: My Docs
+site_name: СОБЕСЕДИКС УЛЬТИМЕЙТ
 site_url: https://potyk.io/sobesedix
 theme:
   name: material
+  features:
+    # Поиск
+    - search.suggest
+    - search.highlight
+plugins:
+  # Поиск
+  - search:
+      lang:
+        - en
+        - ru
+
+markdown_extensions:
+  - pymdownx.magiclink
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

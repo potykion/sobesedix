@@ -9,7 +9,7 @@ hide:
 
 ## Basics
 
-- [Git](01_Git.md)
+- [Tools: Git, Docker](01_Tools)
 - [Python Basics](02_Python_Basics.md)
 - [Классы](03_%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D1%8B.md)
 - [Алгоритмы](04_%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B.md)

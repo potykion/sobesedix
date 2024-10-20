@@ -164,6 +164,26 @@ def deco_w_params(param):
 - `@contextmanager`
 - `class`: `__enter__`, `__exit__`
 
+### Обработка ошибок
+
+- Если в блоке `with` пришла ошибка, то в `__exit__` придет инфа об ошибке
+- Если `__exit__` возвращает `True`, то ошибку обработали/засуспендили; иначе ошибка кидается дальше
+
+```python
+class ManagedResource:
+    def __enter__(self):
+        print("Acquiring resource...")
+        return self 
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        if exc_type is not None:
+            print(f"Error caught in context manager: {exc_value}")
+            return False 
+        print("Releasing resource...")
+        return True 
+
+```
+
 ## Стандартная библиотека
 
 - std: collections / itertools / etc.
